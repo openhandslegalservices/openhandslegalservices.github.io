@@ -366,6 +366,11 @@ nav {
   line-height: 1.5;
 }
 
+.reveal section .logo-caption span {
+  display: block;
+  margin-top: 5px;
+}
+
 .reveal section img {
   border: none;
   background: none;
@@ -373,6 +378,13 @@ nav {
 
 .reveal .slide-background.portrait {
   background-size: cover;
+}
+
+.reveal .slide-number {
+  right: 51px;
+  bottom: 55px;
+  width: 20px;
+  text-align: center;
 }
 
 @media screen and (min-width: 600px) {

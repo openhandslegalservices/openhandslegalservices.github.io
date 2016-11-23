@@ -2631,7 +2631,10 @@
 					'<span class="slide-number-b">'+ b +'</span>';
 		}
 		else {
-			return '<span class="slide-number-a">'+ a +'</span>';
+
+			var num = (a <= 1) ? '' : a-1;
+
+			return '<span class="slide-number-a">'+ num +'</span>';
 		}
 
 	}
