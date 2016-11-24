@@ -333,8 +333,26 @@ nav {
   position: absolute;
   right: 10px;
   font-size: 30px;
-  color: rgba(255,255,255, 0.3);
 }
+.s-twitter,
+.s-facebook {
+  color: rgba(255,255,255, 0.3);
+  display: inline-block;
+}
+a, a:hover, a:visited {
+  text-decoration: none;
+}
+.slide-logo {
+  position: fixed;
+  bottom: 25px;
+  left: 15px;
+  z-index: 11;
+  width: 70px;
+}
+.slide-logo img {
+  width: 100%;
+}
+
 .frame {
   width: 100%;
   height: 100%;
@@ -356,13 +374,13 @@ nav {
 
 .reveal section .logo {
   width: 120px;
-  margin-bottom: 70px;
+  margin: 40px 0 70px;
 }
 
 .reveal section .logo-caption {
   /*font-family: 'Open Sans', Helvetica, sans-serif;*/
   font-size: 0.8em;
-  margin-top: 70px;
+  margin: 70px 0 40px;
   line-height: 1.5;
 }
 
@@ -404,7 +422,7 @@ nav {
   .reveal section .logo-caption {
     /*font-family: 'Open Sans', Helvetica, sans-serif;*/
     font-size: 0.8em;
-    margin: 120px auto 0 auto;
+    margin: 120px auto 40px auto;
     /*line-height: 1.5;*/
     width: 400px;
   }
@@ -430,7 +448,11 @@ nav {
     right: 20px;
     font-size: 40px;
   }
-}
+  .slide-logo {
+    bottom: 30px;
+    left: 20px;
+    width: 100px;
+  }
 
 @media screen and (min-width: 1024px) {
   .reveal .slide-background.portrait {
