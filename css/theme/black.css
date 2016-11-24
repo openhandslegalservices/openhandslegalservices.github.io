@@ -214,6 +214,7 @@ Open+Sans:400,600|Roboto+Slab:100,300
   text-decoration: none;
   -webkit-transition: color .15s ease;
   -moz-transition: color .15s ease;
+  -ms-transition: color .15s ease;
   transition: color .15s ease; }
 
 .reveal a:hover {
@@ -336,8 +337,10 @@ nav {
 }
 .s-twitter,
 .s-facebook {
-  color: rgba(255,255,255, 0.3);
+  color: rgba(255,255,255, 1);
   display: inline-block;
+  float:right;
+  margin-left: 5px;
 }
 a, a:hover, a:visited {
   text-decoration: none;
@@ -348,9 +351,17 @@ a, a:hover, a:visited {
   left: 15px;
   z-index: 11;
   width: 70px;
+  opacity: 0;
+  -webkit-transition: opacity .5s ease;
+  -moz-transition: opacity .5s ease;
+  -ms-transition: opacity .5s ease;
+  transition: opacity .5s ease;
 }
 .slide-logo img {
   width: 100%;
+}
+.slide .slide-logo {
+  opacity: 1;
 }
 
 .frame {
@@ -400,9 +411,33 @@ a, a:hover, a:visited {
 
 .reveal .slide-number {
   right: 51px;
-  bottom: 55px;
+  bottom: 53px;
   width: 20px;
   text-align: center;
+}
+
+.home .reveal .slide-number {
+  opacity: 0;
+}
+.button.give {
+  border: 3px solid #fff;
+  color: #fff;
+  display: inline-block;
+  float:right;
+  margin-top: 4px;
+  margin-left: 5px;
+  padding: 4px 6px;
+  font-size: 10px;
+  text-align: center;
+  font-family: 'Open Sans', Helvetica, sans-serif;
+}
+.reveal .button {
+  background-color: rgb(240, 78, 35);
+  color: #fff;
+  display: inline-block;
+  padding: 21px 34px;
+  text-align: center;
+  font-family: 'Open Sans', Helvetica, sans-serif;
 }
 
 @media screen and (min-width: 600px) {
@@ -450,9 +485,19 @@ a, a:hover, a:visited {
   }
   .slide-logo {
     bottom: 30px;
-    left: 20px;
+    left: 30px;
     width: 100px;
   }
+  .button.give {
+    padding: 6px 8px;
+    font-size: 14px;
+    margin-left: 10px;
+  }
+
+  .reveal .slide-number {
+    font-size: 16px;
+  }
+}
 
 @media screen and (min-width: 1024px) {
   .reveal .slide-background.portrait {
