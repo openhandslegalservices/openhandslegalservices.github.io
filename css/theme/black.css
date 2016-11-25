@@ -244,10 +244,10 @@ Open+Sans:400,600|Roboto+Slab:100,300
   -moz-transition: all .15s linear;
   transition: all .15s linear; }
 
-.reveal a:hover img {
+/*.reveal a:hover img {
   background: rgba(255, 255, 255, 0.2);
   border-color: #F04E23;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.55); }
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.55); }*/
 
 /*********************************************
  * NAVIGATION CONTROLS
@@ -275,16 +275,17 @@ Open+Sans:400,600|Roboto+Slab:100,300
 }
 
 .reveal .controls .navigate-left.enabled:hover {
-  border-right-color: #8dcffc; }
+  /*border-right-color: #8dcffc; }*/
+  border-right-color: #fff; }
 
 .reveal .controls .navigate-right.enabled:hover {
-  border-left-color: #8dcffc; }
+  border-left-color: #fff; }
 
 .reveal .controls .navigate-up.enabled:hover {
-  border-bottom-color: #8dcffc; }
+  border-bottom-color: #fff; }
 
 .reveal .controls .navigate-down.enabled:hover {
-  border-top-color: #8dcffc; }
+  border-top-color: #fff; }
 
 .reveal .controls .navigate-left:focus,
 .reveal .controls .navigate-right:focus,
@@ -333,14 +334,14 @@ nav {
 .social {
   position: absolute;
   right: 10px;
-  font-size: 30px;
+  font-size: 42px;
 }
 .s-twitter,
 .s-facebook {
   color: rgba(255,255,255, 1);
   display: inline-block;
   float:right;
-  margin-left: 5px;
+  margin-left: 2px;
 }
 a, a:hover, a:visited {
   text-decoration: none;
@@ -420,14 +421,15 @@ a, a:hover, a:visited {
   opacity: 0;
 }
 .button.give {
-  border: 3px solid #fff;
-  color: #fff;
+  border: 3px solid #F04E23;;
+  color: #F04E23;;
   display: inline-block;
   float:right;
   margin-top: 4px;
   margin-left: 5px;
-  padding: 4px 6px;
-  font-size: 10px;
+  padding: 6px 8px;
+  font-size: 16px;
+  font-weight: 400;
   text-align: center;
   font-family: 'Open Sans', Helvetica, sans-serif;
 }
@@ -439,8 +441,14 @@ a, a:hover, a:visited {
   text-align: center;
   font-family: 'Open Sans', Helvetica, sans-serif;
 }
+.reveal .give-btn{
+  width:100px;
+}
 
 @media screen and (min-width: 600px) {
+  .reveal .give-btn{
+    width:150px;
+  }
 }
 
 
@@ -455,7 +463,7 @@ a, a:hover, a:visited {
   }
 
   .reveal section .logo-caption {
-    /*font-family: 'Open Sans', Helvetica, sans-serif;*/
+    font-family: 'Open Sans', Helvetica, sans-serif;
     font-size: 0.8em;
     margin: 120px auto 40px auto;
     /*line-height: 1.5;*/
@@ -481,7 +489,7 @@ a, a:hover, a:visited {
   }
   .social {
     right: 20px;
-    font-size: 40px;
+    /*font-size: 40px;*/
   }
   .slide-logo {
     bottom: 30px;
@@ -489,9 +497,9 @@ a, a:hover, a:visited {
     width: 100px;
   }
   .button.give {
-    padding: 6px 8px;
-    font-size: 14px;
-    margin-left: 10px;
+/*    padding: 6px 8px;
+    font-size: 14px;*/
+    margin-left: 11px;
   }
 
   .reveal .slide-number {
@@ -518,6 +526,10 @@ a, a:hover, a:visited {
 
   .reveal section.portrait .content {
     max-width: 54%;
+  }
+
+  .reveal .give-btn{
+    /*width: 150px;*/
   }
 }
 
