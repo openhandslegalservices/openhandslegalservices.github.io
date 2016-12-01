@@ -55,7 +55,9 @@ Open+Sans:400,600|Roboto+Slab:100,300
   word-wrap: break-word; }
 
 .reveal h1 {
-  font-size: 2.0em; }
+  font-size: 2.0em;
+  margin-bottom: 40px;x
+}
 
 .reveal h2 {
   font-size: 1.6em; }
@@ -377,6 +379,15 @@ a, a:hover, a:visited {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }
 
+.start {
+  font-family: 'Roboto Slab', Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+.home .controls {
+  opacity: 0;
+}
+
 .reveal section .content {
   background-color: rgba(0,0,0,0.55);
   /*background-color: red;*/
@@ -392,7 +403,7 @@ a, a:hover, a:visited {
 .reveal section .logo-caption {
   /*font-family: 'Open Sans', Helvetica, sans-serif;*/
   font-size: 0.8em;
-  margin: 70px 0 40px;
+  margin: 60px 0 40px;
   line-height: 1.5;
 }
 
@@ -415,14 +426,16 @@ a, a:hover, a:visited {
   bottom: 53px;
   width: 20px;
   text-align: center;
+  font-weight: bold;
 }
 
 .home .reveal .slide-number {
   opacity: 0;
 }
 .button.give {
-  border: 3px solid #F04E23;;
-  color: #F04E23;;
+  border: 3px solid #F04E23;
+  background-color: #F04E23;
+  color: #FFF;
   display: inline-block;
   float:right;
   margin-top: 4px;
@@ -457,6 +470,10 @@ a, a:hover, a:visited {
     font-size: 24px;
   }
 
+  .reveal h1 {
+    margin-bottom: 60px;
+  }
+
   .reveal section .logo {
     width: 150px;
     margin-bottom: 120px;
@@ -465,7 +482,7 @@ a, a:hover, a:visited {
   .reveal section .logo-caption {
     font-family: 'Open Sans', Helvetica, sans-serif;
     font-size: 0.8em;
-    margin: 120px auto 40px auto;
+    margin: 90px auto 40px auto;
     /*line-height: 1.5;*/
     width: 400px;
   }

@@ -15,7 +15,7 @@
 
 		<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?">
 
-		<link href="https://fonts.googleapis.com/css?family=Open+Sans:600|Roboto+Slab:300" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:600|Roboto+Slab:300, 600" rel="stylesheet">
 
 		<link rel="stylesheet" href="./css/reveal.css">
 		<link rel="stylesheet" href="./css/theme/black.css">
@@ -31,7 +31,7 @@
 		</script>
 	</head>
 	<body>
-		<!-- <div class="show-controls left"><i class="icon oh-before"></i></div>
+	<!-- 	<div class="show-controls left"><i class="icon oh-before"></i></div>
 		<div class="show-controls right"><i class="icon oh-next"></i></div> -->
 		<!-- <div class="frame"></div> -->
 		<nav>
@@ -52,14 +52,15 @@
 		</div>
 		<div class="reveal">
 			<div class="slides">
-				<section data-background-image="./img/Open_Hands_collage.jpg" data-transition="fade fade-out">
+				<section data-background-image="./img/Open_Hands_collage-mask.jpg" data-transition="fade fade-out">
 					<div class="content">
 						<img class="logo" src="./img/logo-white.png"/>
 						<h1>READY TO SEE JUSTICE</h1>
+						<a class="start" href="/#/1">START SLIDESHOW</a>
 						<h3 class="logo-caption">“what longing, what concern, what readiness to see justice done…” <span>– 2 Corinthians 7:11</span></h3>
 					</div>
 				</section>
-				<section data-background-image="./img/Open_Hands_collage.jpg" data-transition="fade fade-out">
+				<section data-background-image="" data-transition="fade fade-out">
 					<div class="content">
 						<p>We’re ready to see justice in 2017.</p>
 						<p>Throughout an eventful year, we've remained firmly committed to serving our clients as image bearers of our Creator.</p>
@@ -467,6 +468,12 @@
 				// event.previousSlide, event.currentSlide, event.indexh, event.indexv
 				setSlideState(event.indexh);
 			});
+
+			//var prev = document.querySelector('.show-controls.left');
+			//var next = document.querySelector('.show-controls.right');
+
+			//prev.addEventListener('click', Reveal.prev);
+			//next.addEventListener('click', Reveal.next);
 		</script>
 	</body>
 </html>
